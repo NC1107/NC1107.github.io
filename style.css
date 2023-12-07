@@ -73,10 +73,7 @@ h1 {
 .information-box {
     text-align: center;
     bottom: 0;
-
     padding: 50px;
-
-
 }
 
 .information-box p {
@@ -127,102 +124,42 @@ h1 {
 }
 
 /* implement resume styling here */
-.resume-container{
-    text-align: center;
+.resume-container {
+    text-align: left;
     padding: 20px;
     margin-top: 50px;
 
+    background: #E7DDCDaa;
+
 }
 
-.resume-container h2{
+.resume-container h2 {
     font-size: 30px;
+    text-align: left;
     color: #405163ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.resume-container p{
+.resume-container p {
+    font-size: 20px;
+    color: #405163ff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.resume-container a {
     font-size: 20px;
     color: #405163ff;
 }
 
-.resume-container a{
-    font-size: 20px;
-    color: #405163ff;
+.indent {
+    padding-left: 20px;
 }
 
-.resume-education{
-    text-align: center;
-    padding: 20px;
+.indent2 {
+    padding-left: 40px;
 }
-
-.resume-education h2{
-    font-size: 30px;
-    color: #405163ff;
-}
-
-.resume-education p{
-    font-size: 20px;
-    color: #405163ff;
-}
-
-.resume-experience{
-    text-align: center;
-    padding: 20px;
-}
-
-.resume-experience h2{
-    font-size: 30px;
-    color: #405163ff;
-}
-
-.resume-experience p{
-    font-size: 20px;
-    color: #405163ff;
-}
-
-.resume-projects{
-    text-align: center;
-    padding: 20px;
-}
-
-.resume-projects h2{
-    font-size: 30px;
-    color: #405163ff;
-}
-
-.resume-projects p{
-    font-size: 20px;
-    color: #405163ff;
-}
-
-.resume-projects a{
-    font-size: 20px;
-    color: #405163ff;
-}
-
-.resume-skills{
-    text-align: center;
-    padding: 20px;
-}
-
-.resume-skills h2{
-    font-size: 30px;
-    color: #405163ff;
-}
-
-.resume-skills p{
-    font-size: 20px;
-    color: #405163ff;
-}
-
-.resume-skills a{
-    font-size: 20px;
-    color: #405163ff;
-}
-
-
-
-
-
 
 
 
