@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom color palette - earthy tones */
+  --color-bone: #E7DDCD;
+  --color-jet: #2F322F;
+  --color-olive: #7D7423;
+  --color-charcoal: #3E4750;
+  --color-charcoal-2: #405163;
+  --color-davys-gray: #555656;
+  --color-drab-dark-brown: #404117;
+  --color-powder-blue: #A5B1C2;
+  --color-black-olive: #2C2E19;
+  --color-battleship-gray: #777564;
+
+  /* Font family */
+  --font-mono: "VT323", monospace;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-mono);
+  min-height: 100vh;
+}
