@@ -27,14 +27,14 @@ export function ContactLinks() {
             href={contact.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="block p-5 transition-transform hover:scale-110"
+            className="block p-4 rounded-xl transition-all duration-200 hover:scale-110 hover:bg-olive/20"
           >
             <Image
               src={contact.icon}
               alt={contact.alt}
               width={70}
               height={70}
-              className="w-[70px] h-[70px]"
+              className="w-[70px] h-[70px] transition-all duration-200"
             />
           </a>
         </li>

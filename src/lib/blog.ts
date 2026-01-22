@@ -17,6 +17,13 @@ export interface BlogPostMeta {
   title: string;
   date: string;
   description: string;
+  readingTime: number;
+}
+
+function calculateReadingTime(content: string): number {
+  const wordsPerMinute = 200;
+  const words = content.trim().split(/\s+/).length;
+  return Math.max(1, Math.ceil(words / wordsPerMinute));
 }
 
 export function getAllPostSlugs(): string[] {
@@ -59,6 +66,7 @@ export function getAllPosts(): BlogPostMeta[] {
         title: post.title,
         date: post.date,
         description: post.description,
+        readingTime: calculateReadingTime(post.content),
       };
     })
     .filter((post): post is BlogPostMeta => post !== null);

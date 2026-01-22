@@ -5,7 +5,13 @@ export interface GitHubRepo {
   html_url: string;
   language: string | null;
   stargazers_count: number;
+  forks_count: number;
   fork: boolean;
+  topics: string[];
+  updated_at: string;
+  homepage: string | null;
+  license: { name: string } | null;
+  archived: boolean;
 }
 
 export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> {
