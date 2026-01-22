@@ -7,7 +7,7 @@ const contacts = [
     alt: "Email",
   },
   {
-    href: "https://linkedin.com/in/nicholas-conn",
+    href: "https://www.linkedin.com/in/nickpconn/",
     icon: "/images/icons/linkedin.svg",
     alt: "LinkedIn",
   },

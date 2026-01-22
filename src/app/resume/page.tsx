@@ -42,7 +42,7 @@ const experiences = [
   {
     company: "Accenture Federal Services",
     title: "Software Developer",
-    date: "Present",
+    date: "Sep 2024 - Present",
     items: [
       "Lead migrations of legacy systems and contact center platforms (Cisco to AWS)",
       "Build infrastructure-as-code solutions with Terraform, Python, and Shell",
