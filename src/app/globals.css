@@ -4,7 +4,8 @@
   /* Custom color palette - earthy tones */
   --color-bone: #E7DDCD;
   --color-jet: #2F322F;
-  --color-olive: #7D7423;
+  --color-olive: #8A8128;
+  --color-olive-light: #A89A3A;
   --color-charcoal: #3E4750;
   --color-charcoal-2: #405163;
   --color-davys-gray: #555656;
@@ -24,10 +25,16 @@ body {
 }
 
 body {
-  background-image: url("/images/background.jpeg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(34, 36, 30, 0.45),
+      rgba(34, 36, 30, 0.68)
+    ),
+    url("/images/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   font-family: var(--font-mono);
   min-height: 100vh;
 }

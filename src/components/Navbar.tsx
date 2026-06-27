@@ -7,6 +7,14 @@ import { useState, useRef, useEffect } from "react";
 // Add your interactive web projects here
 const webProjects = [
   {
+    label: "Echo Messenger",
+    href: "https://echo-messenger.us",
+  },
+  {
+    label: "Sad Cats",
+    href: "https://sad-cats.org",
+  },
+  {
     label: "Housing Affordability",
     href: "https://nc1107.github.io/housing-affordability",
   },
@@ -52,7 +60,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-jet shadow-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-jet/90 backdrop-blur-md border-b border-davys-gray/30 shadow-md">
       <div className="flex items-center justify-between px-4">
         {/* Logo */}
         <Link

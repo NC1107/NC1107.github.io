@@ -1,20 +1,6 @@
 "use client";
 
-const languageColors: Record<string, string> = {
-  TypeScript: "#3178c6",
-  JavaScript: "#f1e05a",
-  Python: "#3572A5",
-  Rust: "#dea584",
-  Java: "#b07219",
-  "C++": "#f34b7d",
-  C: "#555555",
-  Go: "#00ADD8",
-  Shell: "#89e051",
-  HTML: "#e34c26",
-  CSS: "#563d7c",
-  Dockerfile: "#384d54",
-  Makefile: "#427819",
-};
+import { languageColors, DEFAULT_LANGUAGE_COLOR } from "@/lib/languages";
 
 interface ProjectCardProps {
   readonly name: string;
@@ -57,7 +43,7 @@ export function ProjectCard({
   archived,
   index,
 }: ProjectCardProps) {
-  const languageColor = language ? languageColors[language] || "#858585" : null;
+  const languageColor = language ? languageColors[language] || DEFAULT_LANGUAGE_COLOR : null;
 
   const handleCardClick = () => {
     window.open(html_url, "_blank", "noopener,noreferrer");
@@ -67,16 +53,16 @@ export function ProjectCard({
     <button
       type="button"
       onClick={handleCardClick}
-      className={`block bg-bone border border-davys-gray rounded-2xl shadow-md p-4
+      className={`group block bg-bone border border-davys-gray/40 rounded-2xl shadow-md p-4
                  min-h-[280px] flex flex-col cursor-pointer text-left
-                 transition-all duration-200 hover:scale-[1.02] hover:shadow-lg
+                 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-olive/60
                  animate-fade-in-up focus:outline-none focus:ring-2 focus:ring-olive
                  ${archived ? "opacity-70" : ""}`}
       style={{ animationDelay: `${index * 50}ms` }}
     >
       {/* Header */}
       <div className="flex items-start justify-between gap-2 mb-2">
-        <h2 className="text-[1.1rem] text-charcoal-2 font-bold leading-tight">
+        <h2 className="text-[1.1rem] text-charcoal-2 font-bold leading-tight transition-colors group-hover:text-olive">
           {name}
         </h2>
         {archived && (
@@ -117,7 +103,7 @@ export function ProjectCard({
               <span className="flex items-center gap-1.5">
                 <span
                   className="w-3 h-3 rounded-full"
-                  style={{ backgroundColor: languageColor || "#858585" }}
+                  style={{ backgroundColor: languageColor || DEFAULT_LANGUAGE_COLOR }}
                 />
                 {language}
               </span>
